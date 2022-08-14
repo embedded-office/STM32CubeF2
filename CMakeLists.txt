@@ -43,7 +43,7 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     Drivers/STM32F2xx_HAL_Driver
     Drivers/CMakeLists.txt
     CMakeLists.txt
-    LICENSE.md
+    License.md
   )
   add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}-src.zip
     COMMAND ${CMAKE_COMMAND} -E tar c ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}-src.zip --format=zip -- ${package_files}
