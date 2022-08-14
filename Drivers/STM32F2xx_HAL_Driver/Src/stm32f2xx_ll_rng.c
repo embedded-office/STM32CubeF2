@@ -62,6 +62,9 @@
   */
 ErrorStatus LL_RNG_DeInit(RNG_TypeDef *RNGx)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(RNGx);
+
   /* Check the parameters */
   assert_param(IS_RNG_ALL_INSTANCE(RNGx));
   /* Enable RNG reset state */
